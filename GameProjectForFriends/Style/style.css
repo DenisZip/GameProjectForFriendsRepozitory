@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'GAmeForFriendsFont-family';
+
+}
+@font-face {
+	font-family: 'GAmeForFriendsFont-family';
+	src: url('..//fonts/Gagalin-Regular.woff2') format('woff2'), url('Gagalin-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+body{
+
+    padding: 0 10;
+    background: black;
+    padding: 20px 50px 20px;
+}
+@media screen and (max-width:550px){
+body{
+    padding: 20px 50px 20px;
+}
+}
+@media screen and (max-width:430px){
+    body{
+        padding: 20px 30px 20px;
+    }
+}
+main{
+    margin-top: 50px;
+}
+section{
+    margin: 50px 0;
+}
+h2{
+    font-size: 60px;
+    color: #ffff;
+    margin: 50px 0;
+}
+h3{
+    font-size: 40px;
+    padding: 0 0 20px;
+    color: #ffff;
+}
+@media screen and (max-width:380px){
+    main{
+        margin-top: 90px;
+    }
+    h2{
+        font-size: 40px;
+    }
+}
+::-webkit-scrollbar{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: #68D644;
+}
+/* Шапка */
+.header-normal > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header-normal nav span:last-child > div, .men-phone > div{
+    display: flex;
+    background: #68D644;
+    padding: 10px 20px 10px 25px;
+    font-size: 12px;
+    width: 821px;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.header-normal nav span:last-child div > .header-link, .men-phone div > .header-link{
+    font-size: 28px;
+    color: white;
+    font-style: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header-normal nav span:last-child div .search > form, .men-phone div .search > form{
+    width: 269px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    background: black;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.header-normal nav span:last-child div .search form > input, ::placeholder, .men-phone div .search form > input, ::placeholder{
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: white;
+    outline: none;
+    width: 100%;
+}
+.header-normal nav span:last-child div .search form > input:last-child, .men-phone div .search form > input:last-child{
+    background: url(../images/Group\ 1.svg) no-repeat;
+    width: 34px;
+    height: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1160px){
+    .header-normal nav span:last-child > div{
+        width: 700px;
+    }
+    .header-normal nav span:last-child div > .header-link{
+        width: 35%;
+    }
+    
+}
+@media screen and (max-width:1100px){
+    .header-normal nav span:last-child > div{
+        width: 600px;
+    }
+    
+}
+@media screen and (max-width:950px){
+    .header-normal > nav {
+        justify-content: center;
+        display: grid;
+        left: 0;
+        right: 0;
+    }
+    .header-normal nav span:last-child > div{
+        display: none;
+    }
+    .men-phone{
+        display: flex;
+        position: fixed;
+        left: 0;
+        right:0;
+        bottom:0;
+        z-index: 100;
+    } 
+    .header-normal nav span:last-child > div, .men-phone > div{
+        width: 100%;
+    }
+    .header-normal nav span:last-child div > .header-link, .men-phone div > .header-link{
+        width: 50%;
+    }
+}
+@media screen and (min-width:950px){
+    .men-phone{
+        display: none;
+    }
+}
+@media screen and (max-width:650px){
+    .men-phone div .search > form{
+        width: 220px;
+    }
+}
+@media screen and (max-width:500px){
+    .men-phone div .search > form {
+        width: 180px;
+    }   
+    .men-phone div > .header-link {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:430px){
+    header nav span > img{
+        width: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    .men-phone > div {
+        padding: 10px 0 10px 3px;
+    }
+}
+
+/* Конец шапки */
+/* section home */
+.home > div{
+    display: flex;
+}
+.home div div > h1{
+    color: white;
+    font-size: 70px;
+    width: 75%;
+    padding: 0 0 30px;
+}
+.home div div > button {
+    background: none;
+    color: white;
+    font-size: 45px;
+    border: none;
+    margin-top: 5%;
+    padding: 8px 45px 22px;
+    cursor: pointer;
+    border: 1px solid #68D644;
+    padding: 10px;
+    border-radius: 24px;
+    
+}
+.home div:last-child >img{
+    width: 570px;
+}
+@media screen and (max-width:1325px){
+    .home div div > h1{
+        width: 90;
+        font-size: 60px;
+    }
+    .home div div > button{
+        font-size: 35px;
+        padding: 8px;
+    }
+    .home div:last-child >img{
+        width: 480px;
+    }
+}
+@media screen and (max-width:1145px){
+    .home div div > h1{
+        width: 70%;
+        font-size: 50px;
+    }
+    .home div div > button{
+        font-size: 25px;
+        padding: 6px;
+    }
+    .home div:last-child >img{
+        width: 380px;
+    }
+}
+@media screen and (max-width:800px){
+    .home div div > h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    .home div div > button{
+        font-size: 25px;
+        padding: 6px;
+    }
+    .home div:last-child >img{
+        width: 250px;
+    }
+}
+@media screen and (max-width:700px){
+    .home div div > h1{
+        width: 100%;
+        font-size: 25px;
+    }
+    .home div div > button{
+        font-size: 25px;
+        padding: 6px;
+    }
+    .home div:last-child >img{
+        width: 250px;
+    }
+}
+@media screen and (max-width:430px){
+    .home > div{
+        background: url(../images/Group\ 15.png)no-repeat;
+        background-size: 200px;
+        background-position-x: 166px;
+        background-position-y: 50px;
+    }
+    .home div div:last-child > img{
+        display: none;
+    }
+    .home div div > h1{
+        width: 100%;
+        font-size: 37px;
+    }
+    .home div div > button{
+        font-size: 30px;
+        padding: 6px;
+    }
+    .home div:last-child >img{
+        width: 250px;
+    }
+}
+@media screen and (max-width:400px){
+    .home > div{
+        background-position-x: 110px;
+        background-position-y: 100px;
+        background-size: 200px;
+    }
+}
+
+/* конец section home */
+/* section play-card */
+
+.play-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.play-card div:first-child > ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} 
+.play-card div:first-child ul > li, a{
+    text-decoration: none;
+    color: #ffff;
+    list-style-type: none;
+    font-size: 3vw;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.play-card > div:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.play-card-card{
+    width: 260px;
+    height: auto;
+    background: #1c1c1c;
+    cursor: pointer;
+    transition: all 200ms;
+}
+.play-card-card:hover{
+    box-shadow: 0px 0px 100px #68D644;
+    transform: scale(1.01);
+}
+
+.play-card div:nth-child(2) div > img, .slider-container div div div >img{
+    width: 100%;
+}
+.play-card div:nth-child(2) div >div:last-child , .slider-container div div:last-child{
+    background: #1c1c1c;
+    color: #ffff;
+    display: flex;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.play-card > button{
+    font-size: 40px;
+    background: none;
+    border: 1px solid #68D644;
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffff;
+    font-family: monospace;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.play-card-card {
+    /* Стили для ваших карточек слайдов */
+    margin-right: 20px;
+}
+
+.slaider-button-card{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: #68D644;
+    border: none;
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media  screen and (max-width:1350px) {
+    .play-card-card {
+        width: 200px;
+    } 
+}
+@media  screen and (max-width:1200px) {
+    .play-card-card {
+        width: 170px;
+    } 
+}
+@media  screen and (max-width:1050px) {
+    .play-card > div:nth-child(2){
+        display: none;
+    } 
+    .slider-container{
+        display: flex;
+    }
+    .play-card-card:hover{
+        box-shadow: 0;
+        transform: scale(0);
+    }
+    .slider-container div div:last-child{
+        font-size: 15px;
+    }
+    .play-card > button{
+        font-size: 5vw;
+    }
+    .play-card div:first-child ul > li, a {
+        font-size: 4.2vw;
+    }
+    
+}
+@media screen and (max-width:530px){
+    .play-card div:first-child ul > li, a{
+        padding: 5px;
+    }
+}
+/* конец section play-card */
+/* questions-sections */
+.questions-section > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.questions-section-card {
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 16px;
+    background: #68D644;
+    margin: 16px;
+    position: relative;
+    max-width: max-content;
+    transition: max-width 0.3s ease;
+}
+.questions-section-card > p{
+    font-size: 40px;
+    padding-right: 25px;
+
+}
+.questions-section-card div:last-child > p{
+    font-size: 20px;
+}
+.questions-section-card .expand-arrow {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.questions-section-card.expanded {
+    max-width: 600px;
+}
+
+.questions-section-card.expanded .expand-arrow {
+    transform: rotate(180deg);
+}
+
+.questions-section-card .answer {
+    display: none;
+    margin-top: 16px;
+}
+
+.questions-section-card.expanded .answer {
+    display: block;
+}
+@media screen and (max-width:530px){
+    .questions-section-card > p {
+        font-size: 25px;
+    }
+}
+/* конец question-sections */
+/* Site-Features */
+.Site-Features > div{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+}
+.Site-Features div > div{
+    width: 400px;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid #68d644;
+    border-radius: 10px;
+    transition: all 1s;
+    color: #ffff;
+    white-space: nowrap;
+    margin: 10px 0;
+}
+.Site-Features div div> p{
+    color: #ffff;
+    color: #ffff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.Site-Features div > div:hover{
+    width: 450px;
+    white-space: normal;
+    height: auto;
+}
+@media screen and (max-width:530px){
+    .Site-Features div > div{
+        width: 300px;
+    }
+    .Site-Features div > div:hover{
+        width: 320px;
+    }
+}
+@media screen and (max-width:300px){
+    .Site-Features div > div{
+        width: 200px;
+    }
+    .Site-Features div > div:hover{
+        width: 220px;
+    }
+    h3{
+        font-size: 20px;
+    }
+}
+/* конец Site-Features */
+/* Social-Networks */
+.Social-Networks > h3{
+    display: flex;
+    justify-content: center;
+}
+.Social-Networks > ul{
+    display: flex;
+    justify-content: center;
+}
+.Social-Networks div ul li a > img{
+    width: 50px;
+}
+/* конецSocial-Networks */
+/* User-Recommendations */
+.User-Recommendations > div{
+    display: flex;
+    justify-content: center;
+}
+.User-Recommendations div > form{
+    text-align: center;
+}
+.User-Recommendations div form > button{
+    color: #ffff;
+    border: 1px solid #68d644;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+}
+.User-Recommendations div form > p{
+    color: #ffff;
+}
+@media screen and (max-width: 350px){
+    .User-Recommendations div form > button{
+        font-size: 20px;
+    }
+}
+/* конец User-Recommendations */
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+/* footer */

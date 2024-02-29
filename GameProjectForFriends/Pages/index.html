@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>GameForFriends</title>
+</head>
+<body>
+    <header class="header-normal">
+        <nav>
+            <span><img src="../images/Logo.svg" alt="No signal"></span>
+            <span>
+                <div>
+                    <div class="search">
+                        <form action="#">
+                            <input type="text" name="text" class="search" placeholder="Поиск">
+                            <input type="submit" name="submit" class="submit" value="">
+                        </form>
+                    </div>
+                    <div class="header-link">
+                        <div>Name</div>
+                        <div>Name</div>
+                        <div>Name</div>
+                    </div>
+                </div>
+            </span>
+        </nav>
+    </header>
+    <header class="header-phone">
+        <nav>
+            <span class="men-phone">
+                <div>
+                    <div class="search">
+                        <form action="#">
+                            <input type="text" name="text" class="search" placeholder="Поиск">
+                            <input type="submit" name="submit" class="submit" value="">
+                        </form>
+                    </div>
+                    <div class="header-link">
+                        <div>Name</div>
+                        <div>Name</div>
+                        <div>Name</div>
+                    </div>
+                </div>
+            </span>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div>
+                <div>
+                    <h1>Подбери для себя и друга, 
+                        игру для друг друга</h1>
+                    <button>выбрать игру</button>
+                </div>
+                <div>
+                    <img src="../images/Group 15.png" alt="No sigal">
+                </div>
+            </div>
+        </section>
+        <section class="play-card">
+            <div>
+                <ul>
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Ждём</a></li>
+                    <li><a href="#">Скидки</a></li>
+                    <li><a href="#">Онлайн</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="play-card-card">
+                    <div><img src="../images/Eblan.png" alt="Eror"></div>
+                    <div>
+                        <span>Lethal Company</span>
+                        <span>500Р</span>
+                        <span>Онлайн</span>
+                    </div>
+                </div>
+                <div class="play-card-card">
+                    <div><img src="../images/brotato.png" alt="Eror"></div>
+                    <div>
+                        <span>Brotato</span>
+                        <span>1000Р</span>
+                        <span>А хуй знает</span>
+                    </div>
+                </div>
+                <div class="play-card-card">
+                    <div><img src="../images/jediDeluxe.png" alt="Eror"></div>
+                    <div>
+                        <span>STAR WARS Jedi Survivor: Deluxe</span>
+                        <span>6000Р</span>
+                        <span>Одиночный</span>
+                    </div>
+                </div>
+                <div class="play-card-card">
+                    <div><img src="../images/Sifu.jpg" alt="Eror"></div>
+                    <div>
+                        <span>Sifu Deluxe</span>
+                        <span>5000</span>
+                        <span>Одиночный</span>
+                    </div>
+                </div>
+                <div class="play-card-card">
+                    <div><img src="../images/Strange.png" alt="Eror"></div>
+                    <div>
+                        <span>Life is Strange 2 Complete Season</span>
+                        <span>0р</span>
+                        <span>[x</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="play-card-card">
+                        <div><img src="../images/Eblan.png" alt="Eror"></div>
+                        <div>
+                            <span>Lethal Company</span>
+                            <span>500Р</span>
+                            <span>Онлайн</span>
+                        </div>
+                    </div>
+                    <div class="play-card-card">
+                        <div><img src="../images/brotato.png" alt="Eror"></div>
+                        <div>
+                            <span>Brotato</span>
+                            <span>1000Р</span>
+                            <span>А хуй знает</span>
+                        </div>
+                    </div>
+                    <div class="play-card-card">
+                        <div><img src="../images/jediDeluxe.png" alt="Eror"></div>
+                        <div>
+                            <span>STAR WARS Jedi Survivor: Deluxe</span>
+                            <span>6000Р</span>
+                            <span>Одиночный</span>
+                        </div>
+                    </div>
+                    <div class="play-card-card">
+                        <div><img src="../images/Sifu.jpg" alt="Eror"></div>
+                        <div>
+                            <span>Sifu Deluxe</span>
+                            <span>5000</span>
+                            <span>Одиночный</span>
+                        </div>
+                    </div>
+                    <div class="play-card-card">
+                        <div><img src="../images/Strange.png" alt="Eror"></div>
+                        <div>
+                            <span>Life is Strange 2 Complete Season</span>
+                            <span>0р</span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev-btn slaider-button-card"><</button>
+                <button class="next-btn slaider-button-card">></button>
+            </div>
+            <button onclick="nextSlide()">Посмотреть ещё</button>
+        </section>
+        <section class="questions-section">
+            <h2>Часто задаваемые вопосы</h2>
+            <div>
+                <div class="questions-section-card">
+                    <p>Как играть по сети с друзьями??</p>
+                    <div class="expand-arrow">➡</div>
+                    <div class="answer">
+                        <p>Покупка готовых аккаунтов для игры с друзьями - легка и быстро! <br>Просто выбери аккаунт с нужной игрой</p>
+                    </div>
+                </div>
+                <div class="questions-section-card">
+                    <p>Когда новые игры? </p>
+                    <div class="expand-arrow">➡</div>
+                    <div class="answer">
+                        <p>Покупка готовых аккаунтов для игры с друзьями - легка и быстро! <br>Просто выбери аккаунт с нужной игрой</p>
+                    </div>
+                </div>
+                <div class="questions-section-card">
+                    <p>Какие игры по сети с друзьями существуют?</p>
+                    <div class="expand-arrow">➡</div>
+                    <div class="answer">
+                        <p>Покупка готовых аккаунтов для игры с друзьями - легка и быстро! <br>Просто выбери аккаунт с нужной игрой</p>
+                    </div>
+                </div>
+                <div class="questions-section-card">
+                    <p>Как купить аккаунт для кооперативной игры?</p>
+                    <div class="expand-arrow">➡</div>
+                    <div class="answer">
+                        <p>Покупка готовых аккаунтов для игры с друзьями - легка и быстро! <br>Просто выбери аккаунт с нужной игрой</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Site-Features">
+            <h2>Особенности сайта</h2>
+            <div>
+                <div>
+                    <h3>Готовые аккаунты</h3>
+                    <p>.card {
+                        border: 1px solid #ddd;
+                        padding: 10px;
+                        cursor: pointer;
+                      }</p>
+                </div>
+                <div>
+                    <h3>Инструкции</h3>
+                    <p>.card {
+                        border: 1px solid #ddd;
+                        padding: 10px;
+                        cursor: pointer;
+                      }</p>
+                </div>
+                <div>
+                    <h3>Удобность</h3>
+                    <p>.card {
+                        border: 1px solid #ddd;
+                        padding: 10px;
+                        cursor: pointer;
+                        border: 1px solid #ddd;
+                        padding: 10px;
+                        cursor: pointer;
+                        border: 1px solid #ddd;
+                        padding: 10px;
+                        cursor: pointer;
+                      }</p>
+                </div>       
+            </div>
+        </section>
+        <section class="Social-Networks">
+            <h3>Наши соцсети</h3>
+            <ul>
+                <li><a href="#"><img src="../images/SocialNetworks/icons8-instagram-50 (1).png" alt="Error"></a></li>
+                <li><a href="#"><img src="../images/SocialNetworks/icons8-telegram-48.png" alt="Error"></a></li>
+                <li><a href="#"><img src="../images/SocialNetworks/icons8-tik-tok-50.png" alt="Error"></a></li>
+                <li><a href="#"><img src="../images/SocialNetworks/icons8-vk-50.png" alt="Error"></a></li>
+            </ul>
+        </section>
+        <section class="User-Recommendations">
+            <div>
+                <form action="#">
+                    <button>ПОРЕКОМЕНДОВАТЬ</button>
+                    <p>Не нашли игру? Предложите нам ворианты, возможно добавим</p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer><img src="../images/Logo.svg" alt="Error"></footer>
+    <script src="../Scripts/script.js"></script>
+    <script src="../Scripts/slider.js"></script>
+</body>
+</html>
