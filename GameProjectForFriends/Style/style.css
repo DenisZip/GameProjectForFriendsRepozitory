@@ -42,13 +42,17 @@ h3{
     font-size: 40px;
     padding: 0 0 20px;
     color: #ffff;
+    text-wrap: wrap;
 }
-@media screen and (max-width:380px){
+@media screen and (max-width:500px){
     main{
         margin-top: 90px;
     }
     h2{
         font-size: 40px;
+    }
+    h3{
+        font-size: 25px;
     }
 }
 ::-webkit-scrollbar{
@@ -264,8 +268,8 @@ h3{
     .home > div{
         background: url(../images/Group\ 15.png)no-repeat;
         background-size: 200px;
-        background-position-x: 166px;
-        background-position-y: 50px;
+        background-position-x: 100%;
+        background-position-y: 100%;    
     }
     .home div div:last-child > img{
         display: none;
@@ -284,8 +288,9 @@ h3{
 }
 @media screen and (max-width:400px){
     .home > div{
-        background-position-x: 110px;
-        background-position-y: 100px;
+        background-position-x: 100%;
+        background-position-y: 100%;
+    
         background-size: 200px;
     }
 }
